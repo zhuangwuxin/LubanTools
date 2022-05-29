@@ -34,7 +34,7 @@
             // uiLedLabel1
             // 
             this.uiLedLabel1.Font = new System.Drawing.Font("Microsoft YaHei", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLedLabel1.Location = new System.Drawing.Point(275, 102);
+            this.uiLedLabel1.Location = new System.Drawing.Point(275, 149);
             this.uiLedLabel1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLedLabel1.Name = "uiLedLabel1";
             this.uiLedLabel1.Size = new System.Drawing.Size(497, 229);
@@ -49,10 +49,11 @@
             this.ClientSize = new System.Drawing.Size(1037, 555);
             this.Controls.Add(this.uiLedLabel1);
             this.Name = "ConditionalSettingPage";
-            this.Padding = new System.Windows.Forms.Padding(0, 35, 0, 0);
+            this.Padding = new System.Windows.Forms.Padding(0, 54, 0, 0);
             this.ShowTitle = true;
             this.Text = "可选参数";
-            this.TitleFillColor = System.Drawing.Color.LightBlue;
+            this.TitleFillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.TitleHeight = 50;
             this.ResumeLayout(false);
 
         }

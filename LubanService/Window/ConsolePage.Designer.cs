@@ -42,10 +42,16 @@
             // ExecuteButton
             // 
             this.ExecuteButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExecuteButton.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ExecuteButton.FillColor2 = System.Drawing.Color.LightSkyBlue;
             this.ExecuteButton.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ExecuteButton.Location = new System.Drawing.Point(46, 55);
+            this.ExecuteButton.Location = new System.Drawing.Point(41, 82);
             this.ExecuteButton.MinimumSize = new System.Drawing.Size(1, 1);
             this.ExecuteButton.Name = "ExecuteButton";
+            this.ExecuteButton.RectColor = System.Drawing.Color.MintCream;
+            this.ExecuteButton.RectHoverColor = System.Drawing.Color.White;
+            this.ExecuteButton.RectPressColor = System.Drawing.Color.White;
+            this.ExecuteButton.RectSelectedColor = System.Drawing.Color.White;
             this.ExecuteButton.Size = new System.Drawing.Size(202, 54);
             this.ExecuteButton.Style = Sunny.UI.UIStyle.Custom;
             this.ExecuteButton.TabIndex = 0;
@@ -57,7 +63,7 @@
             // uiLabel1
             // 
             this.uiLabel1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel1.Location = new System.Drawing.Point(307, 55);
+            this.uiLabel1.Location = new System.Drawing.Point(307, 63);
             this.uiLabel1.Name = "uiLabel1";
             this.uiLabel1.Size = new System.Drawing.Size(179, 23);
             this.uiLabel1.Style = Sunny.UI.UIStyle.Custom;
@@ -97,12 +103,13 @@
             this.Controls.Add(this.uiLabel1);
             this.Controls.Add(this.ExecuteButton);
             this.Name = "DashBoardPage";
-            this.Padding = new System.Windows.Forms.Padding(0, 35, 0, 0);
+            this.Padding = new System.Windows.Forms.Padding(0, 54, 0, 0);
             this.PageIndex = 1001;
             this.ShowTitle = true;
             this.Style = Sunny.UI.UIStyle.Custom;
             this.Text = "控制台";
-            this.TitleFillColor = System.Drawing.Color.LightBlue;
+            this.TitleFillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.TitleHeight = 50;
             this.ResumeLayout(false);
 
         }

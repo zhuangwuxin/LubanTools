@@ -74,11 +74,15 @@
             // ExePathButton
             // 
             this.ExePathButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExePathButton.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ExePathButton.FillColor2 = System.Drawing.SystemColors.ActiveCaption;
             this.ExePathButton.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ExePathButton.Location = new System.Drawing.Point(718, 65);
             this.ExePathButton.MinimumSize = new System.Drawing.Size(1, 1);
             this.ExePathButton.Name = "ExePathButton";
+            this.ExePathButton.RectColor = System.Drawing.Color.White;
             this.ExePathButton.Size = new System.Drawing.Size(278, 36);
+            this.ExePathButton.Style = Sunny.UI.UIStyle.Custom;
             this.ExePathButton.TabIndex = 11;
             this.ExePathButton.Text = "LubanClientServer.exe路径选择";
             this.ExePathButton.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -102,11 +106,13 @@
             // ResOutputDirButton
             // 
             this.ResOutputDirButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ResOutputDirButton.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.ResOutputDirButton.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ResOutputDirButton.Location = new System.Drawing.Point(718, 252);
             this.ResOutputDirButton.MinimumSize = new System.Drawing.Size(1, 1);
             this.ResOutputDirButton.Name = "ResOutputDirButton";
             this.ResOutputDirButton.Size = new System.Drawing.Size(278, 33);
+            this.ResOutputDirButton.Style = Sunny.UI.UIStyle.Custom;
             this.ResOutputDirButton.TabIndex = 15;
             this.ResOutputDirButton.Text = "资源导出目录";
             this.ResOutputDirButton.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -116,11 +122,13 @@
             // DataSourceDirButton
             // 
             this.DataSourceDirButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DataSourceDirButton.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.DataSourceDirButton.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.DataSourceDirButton.Location = new System.Drawing.Point(718, 208);
             this.DataSourceDirButton.MinimumSize = new System.Drawing.Size(1, 1);
             this.DataSourceDirButton.Name = "DataSourceDirButton";
             this.DataSourceDirButton.Size = new System.Drawing.Size(278, 38);
+            this.DataSourceDirButton.Style = Sunny.UI.UIStyle.Custom;
             this.DataSourceDirButton.TabIndex = 17;
             this.DataSourceDirButton.Text = "配置数据目录";
             this.DataSourceDirButton.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -130,11 +138,13 @@
             // RootDefineButton
             // 
             this.RootDefineButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RootDefineButton.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.RootDefineButton.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.RootDefineButton.Location = new System.Drawing.Point(718, 165);
             this.RootDefineButton.MinimumSize = new System.Drawing.Size(1, 1);
             this.RootDefineButton.Name = "RootDefineButton";
             this.RootDefineButton.Size = new System.Drawing.Size(278, 34);
+            this.RootDefineButton.Style = Sunny.UI.UIStyle.Custom;
             this.RootDefineButton.TabIndex = 20;
             this.RootDefineButton.Text = "root.xml文件路径";
             this.RootDefineButton.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -186,11 +196,13 @@
             // CodeOutputDirButton
             // 
             this.CodeOutputDirButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CodeOutputDirButton.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.CodeOutputDirButton.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.CodeOutputDirButton.Location = new System.Drawing.Point(718, 114);
             this.CodeOutputDirButton.MinimumSize = new System.Drawing.Size(1, 1);
             this.CodeOutputDirButton.Name = "CodeOutputDirButton";
             this.CodeOutputDirButton.Size = new System.Drawing.Size(278, 39);
+            this.CodeOutputDirButton.Style = Sunny.UI.UIStyle.Custom;
             this.CodeOutputDirButton.TabIndex = 13;
             this.CodeOutputDirButton.Text = "代码导出目录";
             this.CodeOutputDirButton.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -287,10 +299,11 @@
             this.Controls.Add(this.CodeOutputDirButton);
             this.Controls.Add(this.ResOutputDirText);
             this.Name = "SettingPage";
-            this.Padding = new System.Windows.Forms.Padding(0, 35, 0, 0);
+            this.Padding = new System.Windows.Forms.Padding(0, 54, 0, 0);
             this.ShowTitle = true;
             this.Text = "必要设置";
-            this.TitleFillColor = System.Drawing.Color.LightBlue;
+            this.TitleFillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.TitleHeight = 50;
             this.ResumeLayout(false);
 
         }

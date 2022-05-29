@@ -51,7 +51,7 @@
             this.Aside.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
             this.Aside.ScrollFillColor = System.Drawing.Color.WhiteSmoke;
             this.Aside.SecondBackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Aside.SelectedColor = System.Drawing.Color.LightSkyBlue;
+            this.Aside.SelectedColor = System.Drawing.SystemColors.ActiveCaption;
             this.Aside.SelectedColor2 = System.Drawing.Color.DeepSkyBlue;
             this.Aside.SelectedForeColor = System.Drawing.SystemColors.ControlLight;
             this.Aside.SelectedHighColor = System.Drawing.Color.DeepSkyBlue;
@@ -130,6 +130,7 @@
             this.LinkDocument.BackColor = System.Drawing.SystemColors.Control;
             this.LinkDocument.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.LinkDocument.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.LinkDocument.LinkColor = System.Drawing.SystemColors.ActiveCaption;
             this.LinkDocument.Location = new System.Drawing.Point(16, 32);
             this.LinkDocument.Name = "LinkDocument";
             this.LinkDocument.Size = new System.Drawing.Size(146, 22);
@@ -147,6 +148,7 @@
             this.LinkGithub.BackColor = System.Drawing.SystemColors.Control;
             this.LinkGithub.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.LinkGithub.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.LinkGithub.LinkColor = System.Drawing.SystemColors.ActiveCaption;
             this.LinkGithub.Location = new System.Drawing.Point(194, 32);
             this.LinkGithub.Name = "LinkGithub";
             this.LinkGithub.Size = new System.Drawing.Size(293, 22);
@@ -185,6 +187,7 @@
             this.uiLinkLabel1.BackColor = System.Drawing.SystemColors.Control;
             this.uiLinkLabel1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.uiLinkLabel1.LinkColor = System.Drawing.SystemColors.ActiveCaption;
             this.uiLinkLabel1.Location = new System.Drawing.Point(517, 32);
             this.uiLinkLabel1.Name = "uiLinkLabel1";
             this.uiLinkLabel1.Size = new System.Drawing.Size(293, 22);
