@@ -74,17 +74,16 @@
             // ExePathButton
             // 
             this.ExePathButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ExePathButton.FillColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ExePathButton.FillColor2 = System.Drawing.SystemColors.ActiveCaption;
+            this.ExePathButton.FillColor = System.Drawing.Color.LightSteelBlue;
             this.ExePathButton.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ExePathButton.Location = new System.Drawing.Point(718, 65);
             this.ExePathButton.MinimumSize = new System.Drawing.Size(1, 1);
             this.ExePathButton.Name = "ExePathButton";
-            this.ExePathButton.RectColor = System.Drawing.Color.White;
+            this.ExePathButton.RectColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ExePathButton.Size = new System.Drawing.Size(278, 36);
             this.ExePathButton.Style = Sunny.UI.UIStyle.Custom;
             this.ExePathButton.TabIndex = 11;
-            this.ExePathButton.Text = "LubanClientServer.exe路径选择";
+            this.ExePathButton.Text = "exe路径";
             this.ExePathButton.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ExePathButton.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.ExePathButton.Click += new System.EventHandler(this.ExePathButton_Click);
@@ -106,7 +105,7 @@
             // ResOutputDirButton
             // 
             this.ResOutputDirButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ResOutputDirButton.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ResOutputDirButton.FillColor = System.Drawing.Color.LightSteelBlue;
             this.ResOutputDirButton.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ResOutputDirButton.Location = new System.Drawing.Point(718, 252);
             this.ResOutputDirButton.MinimumSize = new System.Drawing.Size(1, 1);
@@ -122,7 +121,7 @@
             // DataSourceDirButton
             // 
             this.DataSourceDirButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DataSourceDirButton.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.DataSourceDirButton.FillColor = System.Drawing.Color.LightSteelBlue;
             this.DataSourceDirButton.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.DataSourceDirButton.Location = new System.Drawing.Point(718, 208);
             this.DataSourceDirButton.MinimumSize = new System.Drawing.Size(1, 1);
@@ -138,7 +137,7 @@
             // RootDefineButton
             // 
             this.RootDefineButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RootDefineButton.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.RootDefineButton.FillColor = System.Drawing.Color.LightSteelBlue;
             this.RootDefineButton.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.RootDefineButton.Location = new System.Drawing.Point(718, 165);
             this.RootDefineButton.MinimumSize = new System.Drawing.Size(1, 1);
@@ -196,7 +195,7 @@
             // CodeOutputDirButton
             // 
             this.CodeOutputDirButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CodeOutputDirButton.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CodeOutputDirButton.FillColor = System.Drawing.Color.LightSteelBlue;
             this.CodeOutputDirButton.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.CodeOutputDirButton.Location = new System.Drawing.Point(718, 114);
             this.CodeOutputDirButton.MinimumSize = new System.Drawing.Size(1, 1);
