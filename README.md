@@ -3,7 +3,7 @@
 #### 介绍
 基于Luban游戏数据配置解决方案下的小工具，方便部署使用
 
-![image-20220529161152041](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220529161152041.png)
+![luban](luban.png)
 
 
 #### 安装教程
