@@ -88,11 +88,13 @@ namespace LubanService
         private void LinkGithub_Click(object sender, EventArgs e)
         {
             LinkDocument.LinkVisited = true;
+            Process.Start("https://github.com/MOMOLAXI/LubanTools");
         }
 
         private void uiLinkLabel1_Click(object sender, EventArgs e)
         {
             LinkDocument.LinkVisited = true;
+            Process.Start("https://gitee.com/boxinyuan/luban-tools");
         }
     }
 }
