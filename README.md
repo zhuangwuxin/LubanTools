@@ -12,7 +12,7 @@
 - [LubanTools(github)](https://github.com/MOMOLAXI/LubanTools)  
 - [LubanTools(gitee)](https://gitee.com/boxinyuan/luban-tools)
 
-![luban_tools](D:\UnityProjects\Project\Clover\GameDesignTools\luban-tools\luban_tools.png)
+![luban_tools](luban_tools.png)
 
 ## 安装教程
 
