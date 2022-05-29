@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace LubanService
 {
@@ -18,6 +19,11 @@ namespace LubanService
         {
             SettingService.SaveSetting();
             SettingService.SaveScript();
+            if (!SettingService.CheckScript())
+            {
+                MessageBox.Show("请完善必要参数后再进行导表操作");
+                return;
+            }
 
             Process process = new Process
             {

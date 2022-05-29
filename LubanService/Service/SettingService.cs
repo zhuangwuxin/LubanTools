@@ -47,11 +47,44 @@ namespace LubanService
         }
 
         /// <summary>
+        /// 检查脚本
+        /// </summary>
+        /// <returns></returns>
+        public static bool CheckScript()
+        {
+            bool notValidScript = false;
+            s_Setting ??= LoadSetting();
+            Type type = s_Setting.GetType();
+            FieldInfo[] fields = type.GetFields();
+            foreach (FieldInfo field in fields)
+            {
+                object obj = field.GetValue(s_Setting);
+                if (obj is LubanCommand command)
+                {
+                    if (string.IsNullOrEmpty(command.param))
+                    {
+                        notValidScript = true;
+                        break;
+                    }
+                }
+
+                if (obj == null)
+                {
+                    notValidScript = true;
+                    break;
+                }
+            }
+
+            return !notValidScript;
+        }
+
+        /// <summary>
         /// 保存批处理脚本
         /// </summary>
         public static void SaveScript()
         {
             List<LubanCommand> commands = new List<LubanCommand>();
+            s_Setting ??= LoadSetting();
             Type type = s_Setting.GetType();
             FieldInfo[] fields = type.GetFields();
             foreach (FieldInfo field in fields)

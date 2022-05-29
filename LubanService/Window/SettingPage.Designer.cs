@@ -36,10 +36,10 @@
             this.DataSourceDirButton = new Sunny.UI.UIButton();
             this.RootDefineButton = new Sunny.UI.UIButton();
             this.CodeOutputDirText = new Sunny.UI.UITextBox();
-            this.ResOutputDirText = new Sunny.UI.UITextBox();
+            this.RootDefineText = new Sunny.UI.UITextBox();
             this.DataSourceDirText = new Sunny.UI.UITextBox();
             this.CodeOutputDirButton = new Sunny.UI.UIButton();
-            this.RootDefineText = new Sunny.UI.UITextBox();
+            this.ResOutputDirText = new Sunny.UI.UITextBox();
             this.OutputModeCombo = new Sunny.UI.UIComboBox();
             this.uiLabel2 = new Sunny.UI.UILabel();
             this.ServiceCombo = new Sunny.UI.UIComboBox();
@@ -83,6 +83,7 @@
             this.ExePathButton.Text = "LubanClientServer.exe路径选择";
             this.ExePathButton.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ExePathButton.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.ExePathButton.Click += new System.EventHandler(this.ExePathButton_Click);
             // 
             // GenTypeText
             // 
@@ -110,6 +111,7 @@
             this.ResOutputDirButton.Text = "资源导出目录";
             this.ResOutputDirButton.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ResOutputDirButton.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.ResOutputDirButton.Click += new System.EventHandler(this.ResOutputDirButton_Click);
             // 
             // DataSourceDirButton
             // 
@@ -123,6 +125,7 @@
             this.DataSourceDirButton.Text = "配置数据目录";
             this.DataSourceDirButton.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.DataSourceDirButton.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.DataSourceDirButton.Click += new System.EventHandler(this.DataSourceDirButton_Click);
             // 
             // RootDefineButton
             // 
@@ -136,6 +139,7 @@
             this.RootDefineButton.Text = "root.xml文件路径";
             this.RootDefineButton.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.RootDefineButton.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.RootDefineButton.Click += new System.EventHandler(this.RootDefineButton_Click);
             // 
             // CodeOutputDirText
             // 
@@ -151,19 +155,19 @@
             this.CodeOutputDirText.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.CodeOutputDirText.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
-            // ResOutputDirText
+            // RootDefineText
             // 
-            this.ResOutputDirText.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ResOutputDirText.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ResOutputDirText.Location = new System.Drawing.Point(45, 165);
-            this.ResOutputDirText.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ResOutputDirText.MinimumSize = new System.Drawing.Size(1, 16);
-            this.ResOutputDirText.Name = "ResOutputDirText";
-            this.ResOutputDirText.ShowText = false;
-            this.ResOutputDirText.Size = new System.Drawing.Size(649, 33);
-            this.ResOutputDirText.TabIndex = 14;
-            this.ResOutputDirText.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ResOutputDirText.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.RootDefineText.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.RootDefineText.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.RootDefineText.Location = new System.Drawing.Point(45, 165);
+            this.RootDefineText.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.RootDefineText.MinimumSize = new System.Drawing.Size(1, 16);
+            this.RootDefineText.Name = "RootDefineText";
+            this.RootDefineText.ShowText = false;
+            this.RootDefineText.Size = new System.Drawing.Size(649, 33);
+            this.RootDefineText.TabIndex = 14;
+            this.RootDefineText.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RootDefineText.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // DataSourceDirText
             // 
@@ -191,20 +195,21 @@
             this.CodeOutputDirButton.Text = "代码导出目录";
             this.CodeOutputDirButton.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.CodeOutputDirButton.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.CodeOutputDirButton.Click += new System.EventHandler(this.CodeOutputDirButton_Click);
             // 
-            // RootDefineText
+            // ResOutputDirText
             // 
-            this.RootDefineText.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.RootDefineText.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.RootDefineText.Location = new System.Drawing.Point(45, 247);
-            this.RootDefineText.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.RootDefineText.MinimumSize = new System.Drawing.Size(1, 16);
-            this.RootDefineText.Name = "RootDefineText";
-            this.RootDefineText.ShowText = false;
-            this.RootDefineText.Size = new System.Drawing.Size(649, 34);
-            this.RootDefineText.TabIndex = 18;
-            this.RootDefineText.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RootDefineText.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.ResOutputDirText.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ResOutputDirText.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ResOutputDirText.Location = new System.Drawing.Point(45, 247);
+            this.ResOutputDirText.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ResOutputDirText.MinimumSize = new System.Drawing.Size(1, 16);
+            this.ResOutputDirText.Name = "ResOutputDirText";
+            this.ResOutputDirText.ShowText = false;
+            this.ResOutputDirText.Size = new System.Drawing.Size(649, 34);
+            this.ResOutputDirText.TabIndex = 18;
+            this.ResOutputDirText.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ResOutputDirText.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // OutputModeCombo
             // 
@@ -277,10 +282,10 @@
             this.Controls.Add(this.DataSourceDirButton);
             this.Controls.Add(this.RootDefineButton);
             this.Controls.Add(this.CodeOutputDirText);
-            this.Controls.Add(this.ResOutputDirText);
+            this.Controls.Add(this.RootDefineText);
             this.Controls.Add(this.DataSourceDirText);
             this.Controls.Add(this.CodeOutputDirButton);
-            this.Controls.Add(this.RootDefineText);
+            this.Controls.Add(this.ResOutputDirText);
             this.Name = "SettingPage";
             this.Padding = new System.Windows.Forms.Padding(0, 35, 0, 0);
             this.ShowTitle = true;
@@ -299,10 +304,10 @@
         private Sunny.UI.UIButton DataSourceDirButton;
         private Sunny.UI.UIButton RootDefineButton;
         private Sunny.UI.UITextBox CodeOutputDirText;
-        private Sunny.UI.UITextBox ResOutputDirText;
+        private Sunny.UI.UITextBox RootDefineText;
         private Sunny.UI.UITextBox DataSourceDirText;
         private Sunny.UI.UIButton CodeOutputDirButton;
-        private Sunny.UI.UITextBox RootDefineText;
+        private Sunny.UI.UITextBox ResOutputDirText;
         private Sunny.UI.UIComboBox OutputModeCombo;
         private Sunny.UI.UILabel uiLabel2;
         private Sunny.UI.UIComboBox ServiceCombo;

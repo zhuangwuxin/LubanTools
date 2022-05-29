@@ -13,10 +13,10 @@ namespace LubanService
 
             m_Setting = SettingService.LoadSetting();
             ExePathText.Text = m_Setting.ExePath.param;
-            ResOutputDirText.Text = m_Setting.OutputDataPath.param;
+            RootDefineText.Text = m_Setting.OutputDataPath.param;
             CodeOutputDirText.Text = m_Setting.OutputCodePath.param;
             DataSourceDirText.Text = m_Setting.DataSourcePath.param;
-            RootDefineText.Text = m_Setting.RootDefinePath.param;
+            ResOutputDirText.Text = m_Setting.RootDefinePath.param;
             GenTypeText.Text = m_Setting.GenTypes.param;
             GenTypeText.TextChanged += OnGenTextChange;
             OutputModeCombo.Items.AddRange(new object[] {"cfg --", "proto --", "db --"});
